@@ -20,4 +20,5 @@ RUN cd gettext-$GETTEXT_VERSION && make
 RUN cd gettext-$GETTEXT_VERSION && make install
 RUN rm -rf gettext-$GETTEXT_VERSION
 
+WORKDIR /
 CMD ["/usr/local/bin/envsubst"]
