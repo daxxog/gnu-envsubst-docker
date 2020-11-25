@@ -18,5 +18,6 @@ RUN curl https://ftp.gnu.org/pub/gnu/gettext/gettext-$GETTEXT_VERSION.tar.gz | t
 RUN cd gettext-$GETTEXT_VERSION && ./configure
 RUN cd gettext-$GETTEXT_VERSION && make
 RUN cd gettext-$GETTEXT_VERSION && make install
+RUN rm -rf gettext-$GETTEXT_VERSION
 
 CMD ["/usr/local/bin/envsubst"]
