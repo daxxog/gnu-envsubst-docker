@@ -2,5 +2,6 @@
 /scripts/
 Makefile
 README.md
+LICENSE.md
 BUILD_NUMBER
 GETTEXT_VERSION
