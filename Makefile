@@ -39,7 +39,7 @@ tag: image test bump-build-number
 	git commit -m "tagging build number $$(cat BUILD_NUMBER)"
 	git push
 	git tag -a "$$(cat GETTEXT_VERSION)-build$$(cat BUILD_NUMBER)" -m "tagging version $$(cat GETTEXT_VERSION)-build$$(cat BUILD_NUMBER)"
-	git push origin $$(cat BUILD_NUMBER)
+	git push origin "$$(cat GETTEXT_VERSION)-build$$(cat BUILD_NUMBER)"
 
 .PHONY=push
 push: tag
